@@ -14,6 +14,11 @@ fi
 # confirm hack type
 touch /home/HACKSD
 
+# Setup wifi without app
+echo "[cls_server]" > cls.conf
+echo "ssid = NETWORK_SSID" >> cls.conf
+echo "passwd = NETWORK_PASS" >> cls.conf
+
 mkdir -p /home/busybox
 
 # install updated version of busybox
